@@ -11,7 +11,12 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
     runtimeConfig: {
     oauth: {
-      github: {
+      microsoft: {
+        clientId: process.env.NUXT_OAUTH_MICROSOFT_CLIENT_ID,
+        clientSecret: process.env.NUXT_OAUTH_MICROSOFT_CLIENT_SECRET,
+        tenant: process.env.NUXT_OAUTH_MICROSOFT_TENANT,
+      },
+      github:{
         clientId: process.env.NUXT_OAUTH_GITHUB_CLIENT_ID,
         clientSecret: process.env.NUXT_OAUTH_GITHUB_CLIENT_SECRET,
       }

@@ -11,6 +11,8 @@
               block 
               size="lg"
               class="font-medium"
+              :to="`/auth/github`"
+              external
             >
               <template #leading>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -27,6 +29,8 @@
               block 
               size="lg"
               class="font-medium"
+              :to="`/auth/microsoft`"
+              external
             >
               <template #leading>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

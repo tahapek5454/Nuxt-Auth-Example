@@ -68,6 +68,22 @@ const {clear, fetch, loggedIn, openInPopup, ready, session, user} = useUserSessi
             </svg>
             Login with GitHub
           </a>
+          <br>
+          <br>
+          <a 
+            href="/" 
+            class="inline-flex items-center justify-center w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-2 px-4 rounded-md transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+          >
+            Ana Sayfaya Dön
+          </a>
+          <br>
+          <br>
+          <a 
+            href="/login" 
+            class="inline-flex items-center justify-center w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-2 px-4 rounded-md transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+          >
+            Login Ekranına Dön
+          </a>
         </div>
       </div>
     </div>
