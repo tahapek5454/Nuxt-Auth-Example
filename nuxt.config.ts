@@ -10,6 +10,9 @@ export default defineNuxtConfig({
   ],
   css: ['~/assets/css/main.css'],
     runtimeConfig: {
+    public:{
+      siteUrl: 'https://www.taha.com.tr'
+    },
     oauth: {
       microsoft: {
         clientId: process.env.NUXT_OAUTH_MICROSOFT_CLIENT_ID,
