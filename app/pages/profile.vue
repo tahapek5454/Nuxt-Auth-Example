@@ -38,6 +38,9 @@ const {clear, fetch, loggedIn, openInPopup, ready, session, user} = useUserSessi
             <p v-if="user?.fullName" class="text-sm">
               <span class="font-medium">Full Name:</span> {{ user.fullName }}
             </p>
+            <p v-if="user?.email" class="text-sm">
+              <span class="font-medium">Email:</span> {{ user.email }}
+            </p>
           </div>
 
           <button 

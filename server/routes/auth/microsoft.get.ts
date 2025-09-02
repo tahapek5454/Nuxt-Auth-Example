@@ -1,7 +1,12 @@
 export default defineOAuthMicrosoftEventHandler({
   async onSuccess(event, { user, tokens }) {
     await setUserSession(event, {
-      user
+      user:{
+        avatar:user.avatar_url,
+        userName:user.displayName,
+        fullName:user.givenName + ' ' + user.surname,
+        email: user.mail
+      }
     })
     return sendRedirect(event, '/profile')
   },

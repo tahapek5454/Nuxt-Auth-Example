@@ -5,6 +5,7 @@ export default defineOAuthGitHubEventHandler({
         avatar:user.avatar_url,
         userName:user.login,
         fullName:user.name,
+        email: user.email
       }
     })
     return sendRedirect(event, '/profile')
