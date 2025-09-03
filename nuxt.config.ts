@@ -18,10 +18,12 @@ export default defineNuxtConfig({
         clientId: process.env.NUXT_OAUTH_MICROSOFT_CLIENT_ID,
         clientSecret: process.env.NUXT_OAUTH_MICROSOFT_CLIENT_SECRET,
         tenant: process.env.NUXT_OAUTH_MICROSOFT_TENANT,
+        redirectURL: process.env.NUXT_OAUTH_MICROSOFT_REDIRECT_URL
       },
       github:{
         clientId: process.env.NUXT_OAUTH_GITHUB_CLIENT_ID,
         clientSecret: process.env.NUXT_OAUTH_GITHUB_CLIENT_SECRET,
+        redirectURL: process.env.NUXT_OAUTH_GITHUB_REDIRECT_URL
       }
     }
   }
